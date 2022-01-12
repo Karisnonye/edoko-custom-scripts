@@ -13,7 +13,7 @@ function attachEventListeners() {
       event.preventDefault();
       const data_push = [];
       childNode.forEach(function (val, key) {
-        if (val.className && val.className.trim() == "j-product-item.mshe-item.swiper-slide.swiper-slide-active") {
+        if (val.className && val.className.trim() === "j-expose__cart-item c-cart-item") {
           newDomHtml = val.innerHTML;
           const newDom = document.createElement("div");
           newDom.innerHTML = newDomHtml;
